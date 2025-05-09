@@ -39,6 +39,9 @@ function App() {
 						exact
 						path="/student-profile/:id"
 						element={<StudentPofile />}></Route>
+					<Route path="/login" component={Login} exact />
+                    <Route path="/signup" component={Signup} />
+                    <Route component={Error} />
 				</Routes>
 			</Router>
 		</main>
